@@ -8,6 +8,9 @@
     <artifactId>min-dfs</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>min-dfs-common</module>
+    </modules>
 
     <!--<modules>-->
     <!--    <module>min-dfs-namenode</module>-->
