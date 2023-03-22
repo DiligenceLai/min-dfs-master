@@ -1,5 +1,6 @@
 package com.diligence.dfs.namenode.editslog;
 
+import com.ruyuan.dfs.common.utils.ByteUtil;
 import com.ruyuan.dfs.common.utils.PrettyCodes;
 import com.ruyuan.dfs.model.backup.EditLog;
 
@@ -35,5 +36,18 @@ public class EditLogWrapper {
 
 	public EditLogWrapper(EditLog editLog) {
 		this.editLog = editLog;
+	}
+
+	public long getTxId() {
+		return this.editLog.getTxId();
+	}
+
+	public byte[] toByteArray() {
+		byte[] body = editLog.toByteArray();
+		int bodyLength = body.length;
+		byte[] ret = new byte[body.length + 4];
+		ByteUtil.setInt(ret, 0, bodyLength);
+		System.arraycopy(body, 0, ret, 4, bodyLength);
+		return ret;
 	}
 }
