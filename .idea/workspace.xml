@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01b99bad-c837-4e15-b54c-7ea83fb9200a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/namenode/editslog/DoubleBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/min-dfs-common/src/main/proto/backupnode.proto" beforeDir="false" afterPath="$PROJECT_DIR$/min-dfs-common/src/main/proto/backupnode.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/config/NameNodeConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/config/NameNodeConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/namenode/editslog/EditLogBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/namenode/editslog/EditLogBuffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/namenode/editslog/EditLogWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/min-dfs-namenode/src/main/java/com/diligence/dfs/namenode/editslog/EditLogWrapper.java" afterDir="false" />
     </list>
@@ -22,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -81,7 +92,7 @@
       <updated>1678728113244</updated>
       <workItem from="1678728114581" duration="1434000" />
       <workItem from="1679502070867" duration="528000" />
-      <workItem from="1679502708602" duration="1537000" />
+      <workItem from="1679502708602" duration="2165000" />
     </task>
     <servers />
   </component>

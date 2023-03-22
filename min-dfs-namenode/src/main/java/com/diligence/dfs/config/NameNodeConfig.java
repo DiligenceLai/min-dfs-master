@@ -1,9 +1,21 @@
 package com.diligence.dfs.config;
 
+import com.ruyuan.dfs.model.backup.NameNodeConf;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.File;
+
 /**
  * @author Diligence
  * @create 2023 - 03 - 23 0:46
  */
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class NameNodeConfig {
 	/**
 	 * 默认的文件目录
@@ -22,4 +34,22 @@ public class NameNodeConfig {
 	private String baseDir;
 	private int port;
 	private int editLogFlushThreshold;
+
+	public NameNodeConfig(NameNodeConf nameNodeConf) {
+		this.baseDir = nameNodeConf.getValuesOrDefault("baseDir", DEFAULT_BASEDIR);
+		this.port = Integer.parseInt(nameNodeConf.getValuesOrDefault("port", DEFAULT_PORT + ""));
+		this.editLogFlushThreshold = Integer.parseInt(nameNodeConf.getValuesOrDefault("editLogFlushThreshold",
+				DEFAULT_EDITLOG_FLUSH_THRESHOLD + ""));
+	}
+
+	/**
+	 * 获取文件名？
+	 * 0~500.log
+	 * @param start
+	 * @param end
+	 * @return
+	 */
+	public String getEditlogsFile(long start, long end) {
+		return baseDir + File.separator + "editslog-" + start + "_" + end + ".log";
+	}
 }

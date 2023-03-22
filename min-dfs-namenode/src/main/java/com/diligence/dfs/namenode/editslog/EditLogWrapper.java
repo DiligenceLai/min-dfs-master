@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 代表一条 editlog
  * @author Diligence
  * @create 2023 - 03 - 23 0:43
  */

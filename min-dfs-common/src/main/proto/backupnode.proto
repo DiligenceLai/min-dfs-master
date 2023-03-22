@@ -20,3 +20,7 @@ message INode {
   repeated INode children = 3;
   map<string, string> attr = 4;
 }
+
+message NameNodeConf {
+  map<string, string> values = 1;
+}
