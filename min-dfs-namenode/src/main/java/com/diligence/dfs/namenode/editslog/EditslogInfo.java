@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Objects;
 
 /**
+ * editslog文件信息
  * @author Diligence
  * @create 2023 - 03 - 23 0:32
  */
