@@ -23,8 +23,6 @@ public class EditLogBuffer {
 	private volatile long startTxid = -1L;
 	private volatile long endTxid = 0L;
 
-	public EditLogBuffer() {
-	}
 
 	/**
 	 * 在创建 EditLogBuffer 的时候，
